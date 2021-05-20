@@ -4,7 +4,8 @@ import { Button, Container, Col, Row, Modal, Jumbotron } from 'react-bootstrap';
 import io from 'socket.io-client';
 import { checkWinLoss } from '../../services/control';
 
-const socket = io('https://react-socketio-tic-tac-toe.herokuapp.com/');
+const socket = io('http://localhost:5000');
+//const socket = io('https://react-socketio-tic-tac-toe.herokuapp.com/');
 const Board: React.FC = () => {
 // eslint-disable-next-line react-hooks/exhaustive-deps
   const btnMatrixRef = [[{ref: useRef<HTMLButtonElement>(null)}, {ref: useRef<HTMLButtonElement>(null)}, {ref: useRef<HTMLButtonElement>(null)}],
