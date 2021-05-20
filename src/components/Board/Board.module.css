@@ -14,6 +14,7 @@
 
 @media only screen and (max-width: 428px) {
     .Boardbutton {
+        font-size: calc(100vw/8);
         height: calc(100vw/4);
         width: calc(100vw/4);
     }
